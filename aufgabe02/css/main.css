@@ -1,0 +1,212 @@
+/* line 5, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/main.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* dies ist ein kommentar */
+/* line 12, ../sass/main.scss */
+#main {
+  width: 990px;
+  margin: 0 auto;
+}
+
+/* line 18, ../sass/main.scss */
+input[type="text"], input[type="password"] {
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 10px 5px 10px 5px;
+  width: 180px;
+}
+
+/* line 26, ../sass/main.scss */
+input[type="submit"] {
+  border: 1px solid #000;
+  border-radius: 0;
+  background-color: #fafafa;
+  margin: 10px 5px 10px 5px;
+  cursor: pointer;
+}
+
+/* line 34, ../sass/main.scss */
+label {
+  margin-left: 5px;
+}
+
+/* line 38, ../sass/main.scss */
+.passwordField {
+  width: 300px;
+  float: left;
+}
+
+/* line 43, ../sass/main.scss */
+.passwordFeedback {
+  width: 250px;
+  float: left;
+}
+
+/* line 48, ../sass/main.scss */
+.feedback {
+  margin: 10px 5px 10px 5px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* line 55, ../sass/main.scss */
+.feedback.error {
+  color: #d9534f;
+}
+
+/* line 59, ../sass/main.scss */
+.feedback.warning {
+  color: #f0ad4e;
+}
+
+/* line 63, ../sass/main.scss */
+.feedback.success {
+  color: #5cb85c;
+}
+
+/* line 67, ../sass/main.scss */
+.strengthIndicator {
+  margin: 10px 5px 10px 5px;
+  width: 200px;
+  padding: 5px;
+  height: 13px;
+  border: 1px solid #d3d3d3;
+}
+
+/* line 75, ../sass/main.scss */
+.strengthIndicator::before {
+  content: "";
+  display: block;
+  height: 100%;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -moz-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+/* line 101, ../sass/main.scss */
+.passwordWrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+
+/* line 108, ../sass/main.scss */
+.error .strengthIndicator::before {
+  width: 10%;
+  background-color: #d9534f;
+}
+
+/* line 113, ../sass/main.scss */
+.warning .strengthIndicator::before {
+  width: 60%;
+  background-color: #f0ad4e;
+}
+
+/* line 118, ../sass/main.scss */
+.success .strengthIndicator::before {
+  width: 100%;
+  background-color: #5cb85c;
+}
+
+/* line 123, ../sass/main.scss */
+.feedback.error, .feedback.warning, .feedback.success {
+  display: none;
+}
+
+/* line 127, ../sass/main.scss */
+.error .feedback.error {
+  display: block;
+}
+
+/* line 131, ../sass/main.scss */
+.warning .feedback.warning {
+  display: block;
+}
+
+/* line 135, ../sass/main.scss */
+.success .feedback.success {
+  display: block;
+}

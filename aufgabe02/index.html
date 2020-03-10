@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Übung 01</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<div id="main">
+
+    <div class="passwordWrapper">
+        <div class="passwordField">
+            <label for="password">Passwort: </label>
+            <input type="password" name="password" id="password" placeholder="Bitte geben Sie Ihr Passwort ein">
+        </div>
+        <div class="passwordFeedback">
+            <div class="strengthIndicator"></div>
+            <div class="error feedback">Ihr Passwort ist zu kurz</div>
+            <div class="warning feedback noSpecialSigns">Ihr Passwort enthält keine Sonderzeichen</div>
+            <div class="success feedback">Ihr Passwort entspricht den Anforderungen</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="submitButton">
+        <input type="submit" value="Absenden" class="submit">
+    </div>
+
+
+</div>
+
+</body>
+</html>
