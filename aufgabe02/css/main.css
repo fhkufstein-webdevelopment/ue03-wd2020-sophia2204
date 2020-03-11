@@ -1,92 +1,65 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - C:/Users/sophi/Documents/FH Kufstein/2. Semester/ILV_Web-Development/ue03-wd2020-sophia2204/aufgabe02/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/C%058/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/_support.scssc20200310-8632-1y13q04
+/*@import "compass/reset";
+@import "compass/css3";*/
+/* line 9, ../sass/main.scss */
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'Open Sans', sans-serif; }
 
-Backtrace:
-C:/Ruby26-x64/lib/ruby/2.6.0/tempfile.rb:133:in `initialize'
-C:/Ruby26-x64/lib/ruby/2.6.0/tempfile.rb:133:in `open'
-C:/Ruby26-x64/lib/ruby/2.6.0/tempfile.rb:133:in `block in initialize'
-C:/Ruby26-x64/lib/ruby/2.6.0/tmpdir.rb:135:in `create'
-C:/Ruby26-x64/lib/ruby/2.6.0/tempfile.rb:131:in `initialize'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/util.rb:1253:in `new'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/util.rb:1253:in `atomic_create_and_write_file'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/cache_stores/filesystem.rb:39:in `_store'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/cache_stores/base.rb:51:in `store'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/cache_stores/chain.rb:19:in `block in store'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/cache_stores/chain.rb:19:in `each'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/cache_stores/chain.rb:19:in `store'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/engine.rb:420:in `_to_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/engine.rb:315:in `to_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-C:/Ruby26-x64/bin/compass:23:in `load'
-C:/Ruby26-x64/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - C:/Users/sophi/Documents/FH Kufstein/2. Semester/ILV_Web-Development/ue03-wd2020-sophia2204/aufgabe02/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/C%058/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/_support.scssc20200310-8632-1y13q04"; }
+/* dies ist ein kommentar */
+/* line 17, ../sass/main.scss */
+#main { width: 990px; margin: 0 auto; }
+
+/* line 23, ../sass/main.scss */
+input[type="text"], input[type="password"] { border: 1px solid #000; padding: 5px; margin: 10px 5px 10px 5px; width: 180px; }
+
+/* line 31, ../sass/main.scss */
+input[type="submit"] { border: 1px solid #000; border-radius: 0; background-color: #fafafa; margin: 10px 5px 10px 5px; cursor: pointer; }
+
+/* line 39, ../sass/main.scss */
+label { margin-left: 5px; }
+
+/* line 43, ../sass/main.scss */
+.passwordField { width: 300px; float: left; }
+
+/* line 48, ../sass/main.scss */
+.passwordFeedback { width: 250px; float: left; }
+
+/* line 53, ../sass/main.scss */
+.feedback { margin: 10px 5px 10px 5px; font-size: 11px; font-weight: 600; }
+
+/* line 60, ../sass/main.scss */
+.feedback.error { color: #d9534f; }
+
+/* line 64, ../sass/main.scss */
+.feedback.warning { color: #f0ad4e; }
+
+/* line 68, ../sass/main.scss */
+.feedback.success { color: #5cb85c; }
+
+/* line 72, ../sass/main.scss */
+.strengthIndicator { margin: 10px 5px 10px 5px; width: 200px; padding: 5px; height: 13px; border: 1px solid #d3d3d3; }
+
+/* line 80, ../sass/main.scss */
+.strengthIndicator::before { content: ""; display: block; height: 100%; -moz-transition-property: width; -o-transition-property: width; -webkit-transition-property: width; transition-property: width; -moz-transition-delay: 0; -o-transition-delay: 0; -webkit-transition-delay: 0; transition-delay: 0; -moz-transition-duration: 250ms; -o-transition-duration: 250ms; -webkit-transition-duration: 250ms; transition-duration: 250ms; -moz-transition-timing-function: linear; -o-transition-timing-function: linear; -webkit-transition-timing-function: linear; transition-timing-function: linear; }
+
+/* line 106, ../sass/main.scss */
+.passwordWrapper::after { content: ""; display: block; clear: both; float: none; }
+
+/* line 113, ../sass/main.scss */
+.error .strengthIndicator::before { width: 10%; background-color: #d9534f; }
+
+/* line 118, ../sass/main.scss */
+.warning .strengthIndicator::before { width: 60%; background-color: #f0ad4e; }
+
+/* line 123, ../sass/main.scss */
+.success .strengthIndicator::before { width: 100%; background-color: #5cb85c; }
+
+/* line 128, ../sass/main.scss */
+.feedback.error, .feedback.warning, .feedback.success { display: none; }
+
+/* line 132, ../sass/main.scss */
+.error .feedback.error { display: block; }
+
+/* line 136, ../sass/main.scss */
+.warning .feedback.warning { display: block; }
+
+/* line 140, ../sass/main.scss */
+.success .feedback.success { display: block; }

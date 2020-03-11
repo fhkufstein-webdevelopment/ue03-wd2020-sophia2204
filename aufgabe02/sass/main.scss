@@ -1,5 +1,10 @@
-@import "compass/reset";
-@import "compass/css3";
+/*@import "compass/reset";
+@import "compass/css3";*/
+
+$black: #000;
+$red: #d9534f;
+$yell: #f0ad4e;
+$green: #5cb85c;
 
 body {
     -webkit-font-smoothing: antialiased;
@@ -16,7 +21,7 @@ body {
 
 
 input[type="text"],input[type="password"] {
-    border:1px solid #000;
+    border:1px solid $black;
     padding:5px;
     margin:10px 5px 10px 5px;
 
@@ -24,7 +29,7 @@ input[type="text"],input[type="password"] {
 }
 
 input[type="submit"] {
-    border:1px solid #000;
+    border:1px solid $black;
     border-radius:0;
     background-color:#fafafa;
     margin:10px 5px 10px 5px;
@@ -53,15 +58,15 @@ label {
 }
 
 .feedback.error {
-    color:#d9534f;
+    color: $red;
 }
 
 .feedback.warning {
-    color:#f0ad4e;
+    color: $yell;
 }
 
 .feedback.success {
-    color:#5cb85c;
+    color: $green;
 }
 
 .strengthIndicator {
@@ -107,17 +112,17 @@ label {
 
 .error .strengthIndicator::before {
     width: 10%;
-    background-color: #d9534f;
+    background-color: $red;
 }
 
 .warning .strengthIndicator::before {
     width: 60%;
-    background-color: #f0ad4e;
+    background-color: $yell;
 }
 
 .success .strengthIndicator::before {
     width: 100%;
-    background-color: #5cb85c;
+    background-color: $green;
 }
 
 .feedback.error, .feedback.warning, .feedback.success {
